@@ -1,0 +1,50 @@
+.experience-container{
+    width: 100%;
+    background-color: #292929;
+    box-shadow: 1px 4px 10px rgb(111, 62, 123);
+    margin: 20px 0;
+    padding: 30px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.experience-container:hover{
+    box-shadow: 4px 8px 20px rgb(111, 62, 123);
+}
+
+.experience-title{
+    font-size: 2.5em;
+    background: linear-gradient(180deg, #ff00ff, #7b1fa2);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.experience{
+    margin: 20px 0 0 30px;
+}
+
+.job-title{
+    font-size: 1.8em;
+}
+
+.job-period{
+    font-size: 0.9em;
+}
+
+.responsibilities{
+    margin: 10px 50px;
+}
+
+@media screen and (max-width: 600px){
+    .experience-title{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .job-title{
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+}

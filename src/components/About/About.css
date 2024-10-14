@@ -1,0 +1,157 @@
+.profile-card {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 20px;
+    box-shadow: 1px 4px 10px rgb(111, 62, 123);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.profile-card:hover{
+    box-shadow: 4px 8px 20px rgb(111, 62, 123);
+}
+
+.header {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+}
+
+.header img {
+    width: 25px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-img img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff00ff;
+    background: radial-gradient(#ff00ff, #7b1fa2);
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-text h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #fff;
+}
+
+.profile-text h1 {
+    font-size: 2.5em;
+    margin: 5px 0;
+    background: linear-gradient(90deg, #ff00ff, #7b1fa2);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.profile-text h3 {
+    font-size: 1.2em;
+    color: #bdbdbd;
+    margin: 5px 0 20px 0;
+}
+
+.social-links {
+    margin-top: 5px;
+}
+
+.social-links a {
+    display: inline-flex;
+    justify-content: center;
+    padding: 3px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.social-links a p{
+    display: inline-block;
+    background-color: transparent;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.button {
+    background: linear-gradient(90deg, #ff00ff, #7b1fa2);
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    align-items: center;
+}
+
+.logos {
+    background-color: transparent;
+}
+
+.button:hover {
+    scale: 1.15;
+}
+
+.profile-description {
+    margin-top: 5px;
+    line-height: 1.4;
+    color: #cccccc;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .profile-info{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .profile-text h2 {
+        font-size: 1.3em;
+    }
+    .profile-text h1 {
+        font-size: 2em;
+    }
+
+    .profile-text h3 {
+        font-size: 1em;
+    }
+
+    .social-links{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    .social-links a {
+        margin-right: 0;
+    }
+
+    .social-links a p{
+        margin-right: 5px;
+        font-size: 0.9em;
+    }
+
+    .social-links img {
+        width: 25px;
+        margin-right: 5px;
+    }
+}

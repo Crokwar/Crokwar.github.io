@@ -1,0 +1,47 @@
+body {
+    padding-top: 60px;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 480px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(180deg, rgba(255, 0, 255), rgba(123, 31, 162));
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 480px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, rgba(255, 0, 255), rgba(123, 31, 162));
+    z-index: 9999;
+}
+
+.navbar a {
+    background-color: transparent;
+    padding: 10px 12px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navbar a:hover {
+    background: linear-gradient(180deg, rgba(255, 0, 255), rgba(123, 31, 162));
+    transform: scale(1.15);
+    cursor: pointer;
+    border-radius: 5px;
+}
